@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [href] {
+        color: green;
+        /* Attribute Selector */
+      }
+
+      [href^="https"] {
+        color: red;
+      }
+      [src^="https"] {
+        border: 10px solid red;
+        color: red;
+      }
+      [title~="bridge"] {
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://picsum.photos/id/43/500"
+      title="this is image of bridge sadvbhadbhad "
+      alt=""
+    />
+    <a href="https://facebook.com">Go to Facebook</a>
+    <a href="https://google.com">Go to Google</a>
+  </body>
+</html>

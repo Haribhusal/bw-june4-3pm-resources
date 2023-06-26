@@ -1,0 +1,5 @@
+ctrl + / => Comment
+shift + 1  => Html Skeleton
+shift + Alt + f => Formatter
+ctrl + Space => Show hints
+Alt + Tab => Switch between tabs.

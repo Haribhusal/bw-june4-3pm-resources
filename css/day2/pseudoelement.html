@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-letter {
+        padding: 10px;
+        background-color: black;
+        color: white;
+      }
+
+      ul li::before {
+        content: "=============>";
+      }
+      ul li::marker {
+        color: red;
+        /* Pseudo Element Selector */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Hey, Welcome</p>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 1</li>
+      <li>Item 1</li>
+      <li>Item 1</li>
+      <li>Item 1</li>
+      <li>Item 1</li>
+    </ul>
+  </body>
+</html>

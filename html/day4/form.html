@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="text" placeholder="Enter Name" />
+      <input type="number" placeholder="Enter Age" />
+      <input type="text" placeholder="Please type your email here..." />
+
+      <hr />
+      <input type="password" placeholder="Enter your password here..." />
+      <hr />
+
+      <input type="radio" id="maleSelect" name="genderSelect" />
+      <label for="maleSelect">Male</label>
+
+      <input type="radio" id="femaleselect" name="genderSelect" />
+      <label for="femaleselect">Female</label>
+
+      <hr />
+      <hr />
+
+      <div style="background-color: red">
+        <input type="checkbox" id="cric" name="gameselect" />
+        <label for="cric">I want to play Cricket</label>
+      </div>
+
+      <div style="background-color: yellow">
+        <input type="checkbox" id="foot" name="gameselect" />
+        <label for="foot">I want to play Football</label>
+      </div>
+      <div style="background-color: green">
+        <input type="checkbox" id="basket" name="gameselect" />
+        <label for="basket">I want to play BasketBall</label>
+      </div>
+
+      <!-- <h3>Please select a department</h3> -->
+      <select name="chooseDepartment">
+        <option value="0" disabled selected>Please select a department</option>
+        <option value="1">Accounts and Billing</option>
+        <option value="2">Customer Care</option>
+        <option value="3">Admin</option>
+        <option value="4">Finance</option>
+      </select>
+
+      <input type="submit" value="Submit the form" />
+
+      <!-- <button type="submit">Submit</button> -->
+    </form>
+  </body>
+</html>
