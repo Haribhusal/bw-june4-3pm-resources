@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            counter-reset: box;
+        }
+        .boxes .box::before{
+            counter-increment: box;
+            content: counter(box) '. ';
+            
+        }
+
+        .boxes .box{
+            counter-reset: subbox;
+
+            
+        }
+        .boxes .subbox{
+            padding-left: 100px;
+        }
+        .box .subbox::before{
+            content:  counter(box) "." counter(subbox) '. ';
+            counter-increment: subbox;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+
+        <div class="box">Box Item</div>
+        <div class="box">Box Item
+        <div class="subbox">Sub box 1</div>
+        <div class="subbox">Sub box 2</div>
+        </div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item
+
+             <div class="subbox">Sub box 1</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+
+        </div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+          <div class="box">Box Item
+        <div class="subbox">Sub box 2</div>
+
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+        <div class="subbox">Sub box 2</div>
+
+
+          </div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+        <div class="box">Box Item</div>
+    </div>
+</body>
+</html>
