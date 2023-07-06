@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        border: 10px solid black;
+
+        
+        animation-duration: 1s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+      }
+      .box:hover{
+        animation-name: pleaseGoToRightSideAndBeBack;
+      }
+
+      @keyframes pleaseGoToRightSideAndBeBack {
+        33% {
+          transform: translateX(200px) translateY(100px);
+          background-color: red;
+          border-radius: 50%;
+        }
+        66% {
+          transform: translateX(400px) translateY(200px) rotate(90deg);
+          background-color: green;
+          border-radius: 0px;
+        }
+        99% {
+          transform: translateX(600px) translateY(300px);
+          background-color: blue;
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        Hello
+    </div>
+  </body>
+</html>

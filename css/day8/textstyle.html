@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+
+    <style>
+        .wrapper{
+            max-width: 50%;
+            background-color: yellow;
+            padding: 20px;
+            /* text-align: justify; */
+            /* text-transform: lowercase; */
+            /* text-decoration: line-through; */
+          
+
+        }
+        .wrapper::first-letter{
+            text-transform: uppercase;
+        }
+        h1{
+            text-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+            font-size: 100px;
+        }
+
+        .container{
+            width: 100px;
+            white-space: nowrap;
+            background-color: yellow;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        Hello Broadway Infosys
+    </div>
+
+    <!-- <h1>Hello Broadway</h1> -->
+    <!-- <div class="wrapper">
+
+
+      
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias possimus
+      odio eaque, tempore iste sint quasi illum excepturi neque inventore
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias possimus
+      odio eaque, tempore iste sint quasi illum excepturi neque inventore
+      tenetur fuga autem laborum quas aliquid sunt nostrum. Eligendi, beatae!uu
+      tenetur fuga autem laborum quas aliquid sunt nostrum. Eligendi, beatae!u
+    </div> -->
+  </body>
+</html>
