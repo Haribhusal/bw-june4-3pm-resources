@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: "head head head head head head head head head head"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "side side side main main main main main main main"
+        "foot foot foot foot foot foot foot foot foot foot"
+        ;
+      }
+
+      header {
+        grid-area: head;
+        background-color: red;
+        color: white;
+      }
+      aside {
+       grid-area: side;
+        background-color: black;
+        color: white;
+      }
+      main {
+       grid-area: main;
+        background-color: yellow;
+        color: white;
+      }
+
+      footer {
+        grid-area: foot;
+        background-color: blue;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>This is Header</header>
+    <aside>This is menubar/leftbar/sidebar</aside>
+    <main>This is main content</main>
+    <footer>This is Footer</footer>
+  </body>
+</html>

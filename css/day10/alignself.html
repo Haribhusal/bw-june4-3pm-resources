@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            display: flex;
+            height: 400px;
+            gap: 10px;
+            background-color: rebeccapurple;
+        }
+        .boxes .box{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        .boxes .box:nth-child(2){
+            align-self: flex-end;
+        }
+          .boxes .box:nth-child(3){
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="boxes">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>

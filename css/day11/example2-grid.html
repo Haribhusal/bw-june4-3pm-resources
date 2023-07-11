@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+
+        header{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 11;
+            background-color: red;
+            color: white;
+        }
+        aside{
+            grid-row: 3/10;
+
+            grid-column: 1/4;
+            background-color: black;
+            color: white;
+        }
+           main{
+            grid-row: 3/10;
+
+            grid-column: 4/11;
+            background-color: yellow;
+            color: white;
+        }
+
+        footer{
+            grid-row: 10/11;
+            grid-column: 1/11;
+            background-color: blue;
+            color: white;
+        }
+        .popup{
+             grid-row: 2/5;
+            grid-column: 2/5;
+            background-color: aqua;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <header>This is Header</header>
+    <aside>This is menubar/leftbar/sidebar</aside>
+    <main>This is main content</main>
+    <footer>This is Footer</footer>
+    <div class="popup"></div>
+
+
+</body>
+</html>
